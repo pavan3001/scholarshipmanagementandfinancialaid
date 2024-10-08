@@ -1,0 +1,229 @@
+/* General styles for the login page */
+.login-page {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #4A90E2, #9013FE); /* Gradient background */
+    background-image: url('../assets/bg2.jpeg'); /* Path to your background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+/* Dark mode background */
+.login-page.dark-mode {
+    background: linear-gradient(135deg, #1C1C1C, #282828); /* Dark gradient for dark mode */
+}
+
+/* General container styles */
+.container {
+    max-width: 450px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Dark mode container */
+.container.dark-mode {
+    background-color: rgba(45, 45, 45, 0.95);
+    color: white;
+}
+
+/* Hover effect for container */
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styles */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Dark mode heading */
+h2.dark-mode {
+    color: #f1f1f1;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(245, 245, 245, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Dark mode input */
+input[type="email"].dark-mode,
+input[type="tel"].dark-mode,
+input[type="text"].dark-mode,
+input[type="number"].dark-mode,
+input[type="date"].dark-mode,
+input[type="password"].dark-mode {
+    background-color: rgba(45, 45, 45, 0.9);
+    color: #fff;
+    box-shadow: none;
+}
+
+/* Input focus styles */
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus {
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    box-shadow: 0 8px 15px rgba(102, 175, 233, 0.3);
+    transform: scale(1.03);
+}
+
+/* Submit button */
+.button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.button:hover {
+    background: linear-gradient(135deg, #2980b9, #2ecc71);
+    transform: translateY(-3px);
+}
+
+/* Button active effect */
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Links below login form */
+.login-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-links p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.login-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.login-links a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Dark mode link */
+.login-links a.dark-mode {
+    color: #fff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 480px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+}
+
+/* Optional dark mode switcher */
+.dark-mode-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.dark-mode-switch:hover {
+    background: #555;
+}

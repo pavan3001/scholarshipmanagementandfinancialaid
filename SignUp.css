@@ -1,0 +1,111 @@
+/* General container styles for Sign-Up form */
+.container {
+    margin-top: 10vh; /* Optional margin for aesthetic spacing */
+    margin-bottom: 15vh;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.9); /* Slightly transparent for overlay effect */
+    border-radius: 8px;
+    box-shadow: 8px 16px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Context for z-index */
+    z-index: 1; /* On top of the background */
+}
+
+/* Heading styles */
+h2 {
+    color: #3498db; /* Adjust to match the theme */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Form input fields */
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* Input focus styles */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Submit button styling */
+.button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+/* Additional links or info below the form */
+.signup-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup-links p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.signup-links a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.signup-links a:hover {
+    text-decoration: underline;
+}

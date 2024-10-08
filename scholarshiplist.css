@@ -1,0 +1,171 @@
+/* Global reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Dynamic animated background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    background: linear-gradient(120deg, #2196F3, #E91E63, #FFEB3B, #4CAF50);
+    background-size: 300% 100%; /* Large size for smooth animation */
+    animation: gradientBG 9s ease infinite; /* Smooth transition for gradient */
+    display: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    margin: 0;
+}
+
+/* Gradient background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    padding: 30px;
+    text-align: center;
+    margin-top: 25vh;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 12px; /* Rounded corners */
+}
+
+
+/* Hover effect for container */
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Heading styling */
+.container h2 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Animated icon in the card */
+.card::before {
+    content: '🎓'; /* Scholarship icon */
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    font-size: 40px;
+    animation: bounceIcon 2s infinite ease;
+}
+
+/* Icon bounce animation */
+@keyframes bounceIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Card styling */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 500px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Scholarship name styling */
+.card h3 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+/* Scholarship description and deadline */
+.card p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Bold deadline text */
+.card p strong {
+    color: #34495e;
+}
+
+/* Button styling */
+.button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.7rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+    .container h2 {
+        font-size: 2.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.6rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

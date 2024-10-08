@@ -1,0 +1,134 @@
+/* Professional About Us page container */
+.aboutus-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #f7f9fc, #eef1f4); /* Subtle gradient background */
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Deeper shadow for a modern look */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+/* About Us content */
+.aboutus-content {
+    padding: 50px;
+    color: #2c3e50; /* Dark slate color for text */
+    line-height: 1.8; /* Increased line height for better readability */
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency for a refined look */
+    border-radius: 15px;
+}
+
+/* Headings */
+.aboutus-content h2 {
+    font-size: 3.5rem; /* Large font size */
+    color: #e74c3c; /* Bright red color for main heading */
+    margin-bottom: 30px;
+    border-bottom: 3px solid #16a085; /* Teal underline */
+    display: inline-block;
+    padding-bottom: 12px;
+    text-transform: uppercase; /* Professional uppercase style */
+    letter-spacing: 1px; /* Slight spacing for elegance */
+}
+
+.aboutus-content h3 {
+    font-size: 2.5rem; /* Increased font size */
+    color: #16a085; /* Teal color for subheadings */
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-weight: 600; /* Bolder subheadings for emphasis */
+    text-transform: capitalize; /* Professional text styling */
+}
+
+/* Paragraphs */
+.aboutus-content p {
+    font-size: 1.3rem; /* Slightly larger font for better readability */
+    color: #34495e; /* Darker shade for paragraphs */
+    line-height: 1.7; /* Enhanced readability */
+    margin-bottom: 30px;
+}
+
+/* List styling */
+.aboutus-content ul {
+    list-style-type: square; /* Professional list styling */
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.aboutus-content ul li {
+    font-size: 1.2rem; /* Slightly larger font for list items */
+    color: #34495e; /* Darker shade for list items */
+    margin-bottom: 15px;
+    padding-left: 15px; /* Padding to improve spacing */
+}
+
+/* Contact link */
+.aboutus-content a {
+    color: #e74c3c; /* Match the heading color */
+    text-decoration: none; /* No underline for cleaner look */
+    font-weight: 600;
+    border-bottom: 2px solid #e74c3c; /* Subtle border for hover effect */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+}
+
+.aboutus-content a:hover {
+    color: #c0392b; /* Darker red on hover */
+    border-bottom: 2px solid #c0392b; /* Darker underline on hover */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Box shadow hover effect */
+.aboutus-container:hover {
+    box-shadow: 0 14px 45px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .aboutus-content {
+        padding: 30px;
+    }
+
+    .aboutus-content h2 {
+        font-size: 3rem;
+    }
+
+    .aboutus-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .aboutus-content p {
+        font-size: 1.15rem;
+    }
+
+    .aboutus-content ul li {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .aboutus-content h3 {
+        font-size: 1.9rem;
+    }
+
+    .aboutus-content p {
+        font-size: 1rem;
+    }
+
+    .aboutus-content ul li {
+        font-size: 1rem;
+    }
+}
+
+/* Background for entire page */
+body {
+    background: linear-gradient(to right, #d3cce3, #e9e4f0); /* Professional background gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    color: #2c3e50; /* Text color matching the theme */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

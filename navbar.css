@@ -1,0 +1,91 @@
+/* General styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #0e9236, #6dd5fa, #60a939); /* Gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.5s ease; /* Smooth transition on scroll */
+}
+
+/* Styling for the navbar title */
+.navbar-title {
+    color: #020202; /* White color for title */
+    font-size: 2.1rem;
+    font-weight: 18000;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Wider letter spacing */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Text shadow for emphasis */
+}
+
+/* Navbar links container */
+.navbar-links {
+    list-style: none; /* Removes default list styling */
+    display: flex;
+    gap: 25px; /* Spacing between the links */
+    margin: 0;
+}
+
+/* Individual link items */
+.navbar-links li {
+    position: relative;
+}
+
+/* Link styling */
+.navbar-links a {
+    color: #ecf0f1; /* Light gray color */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover effect for the links */
+.navbar-links a:hover {
+    background-color: #d41b37; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Soft shadow on hover */
+}
+
+/* Active link state */
+.navbar-links a.active {
+    background-color: #e74c3c; /* Red for active page */
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar-title {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-links a {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Scrolling effect */
+.navbar.scrolled {
+    background-color: #2e3134; /* Dark background when scrolled */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
